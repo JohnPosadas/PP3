@@ -10,7 +10,7 @@ const signUpNavBar = document.querySelector(".sign-up");
 const slashNavBar = document.querySelector("#slash");
 const passwordIn = document.querySelector("#pswrd");
 const loginForm = document.querySelector("#login-form");
-
+// ...
 function createNewUsername() {
   let password = passwordIn.value,
     email = emailIn.value;
