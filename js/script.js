@@ -11,23 +11,6 @@ const slashNavBar = document.querySelector("#slash");
 const passwordIn = document.querySelector("#pswrd");
 const loginForm = document.querySelector("#login-form");
 
-function checkUsername() {
-  let password = passwordIn.value;
-  if (usernameIn.value === "") {
-    usernameOut.innerHTML = "Please enter a username.";
-  } else if (password.length < 8) {
-    usernameOut.innerHTML =
-      "Please enter a password that is at least 8 character long.";
-  } else {
-    Storage.setUsername(usernameIn.value);
-    location.reload();
-    if (usernameIn.value == "E-commerce") {
-      window.open("https://lchua2314.github.io/E-commerce-Website/index.html");
-      alert("Thanks for looking at the code! :)");
-    }
-  }
-}
-
 function createNewUsername() {
   let password = passwordIn.value,
     email = emailIn.value;
