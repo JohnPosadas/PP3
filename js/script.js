@@ -536,7 +536,7 @@ function initializeItem1() {
   <img src="../PP3/img/caffe-americano.jpg" alt="product" />
     <div>
       <h3><span class="span-primary">Caffè</span> Americano</h3>
-      <h4>$2.10</h4>
+      <h4>₱110</h4>
       <span class="remove-item-1">Remove</span>
     </div>
     <div>
