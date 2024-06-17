@@ -557,14 +557,14 @@ function initializeItem1() {
   up1.addEventListener("click", function () {
     item1Counter++;
     item1Amount.innerHTML = item1Counter;
-    updateTotal(2.1);
+    updateTotal(110);
     Storage.setAmount("item1", item1Counter);
   });
 
   down1.addEventListener("click", function () {
     item1Counter--;
     item1Amount.innerHTML = item1Counter;
-    updateTotal(-2.1);
+    updateTotal(-110);
     Storage.setAmount("item1", item1Counter);
 
     if (item1Counter === 0) {
@@ -575,7 +575,7 @@ function initializeItem1() {
 
   remove1.addEventListener("click", function () {
     item1Display.innerHTML = "";
-    updateTotal(-2.1 * item1Counter);
+    updateTotal(-110 * item1Counter);
     item1Counter = 0;
     Storage.removeAmount("item1");
   });
