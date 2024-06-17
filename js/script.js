@@ -155,6 +155,13 @@ cartCloseBtn.addEventListener("click", function () {
 const total = document.querySelector(".total");
 let totalAmount;
 
+// Currency formatter for Philippine Peso
+const formatter = new Intl.NumberFormat('en-PH', {
+  style: 'currency',
+  currency: 'PHP',
+});
+
+
 // Establish totalAmount in local storage if not there already.
 if (!localStorage.getItem("total")) {
   localStorage.setItem("total", "0");
@@ -167,6 +174,21 @@ if (!localStorage.getItem("total")) {
  * Updates total in the local storage and class "total" in the DOM
  * @param {Float} moneyChange
  */
+// function updateTotal(moneyChange) {
+//   totalAmount += moneyChange;
+//   localStorage.setItem("total", totalAmount.toString());
+//   if (totalAmount > 1) {
+//     total.innerHTML = `<span class="span-primary">Total Amount:</span> $${totalAmount.toFixed(
+//       2
+//     )}`;
+//   } else {
+//     total.innerHTML = `<br>
+//       <br>
+//       Your Shopping Cart is empty. <br>
+//         Add items to cart by hovering over / tapping on the images of products
+//     on the Menu page.`;
+//   }
+// }
 function updateTotal(moneyChange) {
   totalAmount += moneyChange;
   localStorage.setItem("total", totalAmount.toString());
