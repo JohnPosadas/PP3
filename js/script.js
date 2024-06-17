@@ -314,7 +314,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item1Counter++;
     item1Amount.innerHTML = item1Counter;
-    updateTotal(2.1);
+    updateTotal(110);
     Storage.setAmount("item1", item1Counter);
   });
 
@@ -327,7 +327,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item2Counter++;
     item2Amount.innerHTML = item2Counter;
-    updateTotal(2.6);
+    updateTotal(160);
     Storage.setAmount("item2", item2Counter);
   });
 
@@ -340,7 +340,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item3Counter++;
     item3Amount.innerHTML = item3Counter;
-    updateTotal(2.79);
+    updateTotal(200);
     Storage.setAmount("item3", item3Counter);
   });
 
@@ -353,7 +353,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item4Counter++;
     item4Amount.innerHTML = item4Counter;
-    updateTotal(2.05);
+    updateTotal(120);
     Storage.setAmount("item4", item4Counter);
   });
 
@@ -366,7 +366,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item5Counter++;
     item5Amount.innerHTML = item5Counter;
-    updateTotal(2.2);
+    updateTotal(150);
     Storage.setAmount("item5", item5Counter);
   });
 
@@ -379,7 +379,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item6Counter++;
     item6Amount.innerHTML = item6Counter;
-    updateTotal(2.8);
+    updateTotal(180);
     Storage.setAmount("item6", item6Counter);
   });
 
@@ -392,7 +392,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item7Counter++;
     item7Amount.innerHTML = item7Counter;
-    updateTotal(2.25);
+    updateTotal(200);
     Storage.setAmount("item7", item7Counter);
   });
 
@@ -405,7 +405,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item8Counter++;
     item8Amount.innerHTML = item8Counter;
-    updateTotal(2.59);
+    updateTotal(150);
     Storage.setAmount("item8", item8Counter);
   });
 
@@ -418,7 +418,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item9Counter++;
     item9Amount.innerHTML = item9Counter;
-    updateTotal(2.34);
+    updateTotal(200);
     Storage.setAmount("item9", item9Counter);
   });
 
@@ -431,7 +431,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item10Counter++;
     item10Amount.innerHTML = item10Counter;
-    updateTotal(2.89);
+    updateTotal(180);
     Storage.setAmount("item10", item10Counter);
   });
 
@@ -444,7 +444,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item11Counter++;
     item11Amount.innerHTML = item11Counter;
-    updateTotal(2.18);
+    updateTotal(180);
     Storage.setAmount("item11", item11Counter);
   });
 
@@ -457,7 +457,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item12Counter++;
     item12Amount.innerHTML = item12Counter;
-    updateTotal(2.75);
+    updateTotal(190);
     Storage.setAmount("item12", item12Counter);
   });
 }
