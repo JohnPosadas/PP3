@@ -600,7 +600,7 @@ function initializeItem2() {
   <img src="../PP3/img/caffe-misto.jpg" alt="product" />
     <div>
       <h3><span class="span-primary">Caffè</span> Misto</h3>
-      <h4>$2.60</h4>
+      <h4>₱160</h4>
       <span class="remove-item-2">Remove</span>
     </div>
     <div>
@@ -621,14 +621,14 @@ function initializeItem2() {
   up2.addEventListener("click", function () {
     item2Counter++;
     item2Amount.innerHTML = item2Counter;
-    updateTotal(2.6);
+    updateTotal(160);
     Storage.setAmount("item2", item2Counter);
   });
 
   down2.addEventListener("click", function () {
     item2Counter--;
     item2Amount.innerHTML = item2Counter;
-    updateTotal(-2.6);
+    updateTotal(-160);
     Storage.setAmount("item2", item2Counter);
 
     if (item2Counter === 0) {
@@ -639,7 +639,7 @@ function initializeItem2() {
 
   remove2.addEventListener("click", function () {
     item2Display.innerHTML = "";
-    updateTotal(-2.6 * item2Counter);
+    updateTotal(-160 * item2Counter);
     item2Counter = 0;
     Storage.removeAmount("item2");
   });
@@ -654,7 +654,7 @@ function initializeItem3() {
   <img src="../PP3/img/caffe-americano.jpg" alt="product" />
     <div>
       <h3><span class="span-primary">Blonde Caffè</span> Americano</h3>
-      <h4>$2.79</h4>
+      <h4>₱200</h4>
       <span class="remove-item-3">Remove</span>
     </div>
     <div>
@@ -675,14 +675,14 @@ function initializeItem3() {
   up3.addEventListener("click", function () {
     item3Counter++;
     item3Amount.innerHTML = item3Counter;
-    updateTotal(2.79);
+    updateTotal(200);
     Storage.setAmount("item3", item3Counter);
   });
 
   down3.addEventListener("click", function () {
     item3Counter--;
     item3Amount.innerHTML = item3Counter;
-    updateTotal(-2.79);
+    updateTotal(-200);
     Storage.setAmount("item3", item3Counter);
 
     if (item3Counter === 0) {
@@ -693,7 +693,7 @@ function initializeItem3() {
 
   remove3.addEventListener("click", function () {
     item3Display.innerHTML = "";
-    updateTotal(-2.79 * item3Counter);
+    updateTotal(-200 * item3Counter);
     item3Counter = 0;
     Storage.removeAmount("item3");
   });
@@ -708,7 +708,7 @@ function initializeItem4() {
   <img src="../PP3/img/dark-roast-coffee.jpg" alt="product" />
     <div>
       <h3><span class="span-primary">Blonde</span> Roast</h3>
-      <h4>$2.05</h4>
+      <h4>₱120</h4>
       <span class="remove-item-4">Remove</span>
     </div>
     <div>
@@ -729,14 +729,14 @@ function initializeItem4() {
   up4.addEventListener("click", function () {
     item4Counter++;
     item4Amount.innerHTML = item4Counter;
-    updateTotal(2.05);
+    updateTotal(120);
     Storage.setAmount("item4", item4Counter);
   });
 
   down4.addEventListener("click", function () {
     item4Counter--;
     item4Amount.innerHTML = item4Counter;
-    updateTotal(-2.05);
+    updateTotal(-120);
     Storage.setAmount("item4", item4Counter);
 
     if (item4Counter === 0) {
@@ -747,7 +747,7 @@ function initializeItem4() {
 
   remove4.addEventListener("click", function () {
     item4Display.innerHTML = "";
-    updateTotal(-2.05 * item4Counter);
+    updateTotal(-120 * item4Counter);
     item4Counter = 0;
     Storage.removeAmount("item4");
   });
@@ -762,7 +762,7 @@ function initializeItem5() {
   <img src="../PP3/img/dark-roast-coffee.jpg" alt="product" />
     <div>
       <h3><span class="span-primary">Dark Roast</span> Coffee</h3>
-      <h4>$2.20</h4>
+      <h4>₱150</h4>
       <span class="remove-item-5">Remove</span>
     </div>
     <div>
@@ -783,14 +783,14 @@ function initializeItem5() {
   up5.addEventListener("click", function () {
     item5Counter++;
     item5Amount.innerHTML = item5Counter;
-    updateTotal(2.2);
+    updateTotal(150);
     Storage.setAmount("item5", item5Counter);
   });
 
   down5.addEventListener("click", function () {
     item5Counter--;
     item5Amount.innerHTML = item5Counter;
-    updateTotal(-2.2);
+    updateTotal(-150);
     Storage.setAmount("item5", item5Counter);
 
     if (item5Counter === 0) {
@@ -801,7 +801,7 @@ function initializeItem5() {
 
   remove5.addEventListener("click", function () {
     item5Display.innerHTML = "";
-    updateTotal(-2.2 * item5Counter);
+    updateTotal(-150 * item5Counter);
     item5Counter = 0;
     Storage.removeAmount("item5");
   });
@@ -816,7 +816,7 @@ function initializeItem6() {
   <img src="../PP3/img/dark-roast-coffee.jpg" alt="product" />
     <div>
       <h3><span class="span-primary">Pike Place®</span> Roast</h3>
-      <h4>$2.80</h4>
+      <h4>₱180</h4>
       <span class="remove-item-6">Remove</span>
     </div>
     <div>
@@ -837,14 +837,14 @@ function initializeItem6() {
   up6.addEventListener("click", function () {
     item6Counter++;
     item6Amount.innerHTML = item6Counter;
-    updateTotal(2.8);
+    updateTotal(180);
     Storage.setAmount("item6", item6Counter);
   });
 
   down6.addEventListener("click", function () {
     item6Counter--;
     item6Amount.innerHTML = item6Counter;
-    updateTotal(-2.8);
+    updateTotal(-180);
     Storage.setAmount("item6", item6Counter);
 
     if (item6Counter === 0) {
@@ -855,7 +855,7 @@ function initializeItem6() {
 
   remove6.addEventListener("click", function () {
     item6Display.innerHTML = "";
-    updateTotal(-2.8 * item6Counter);
+    updateTotal(-180 * item6Counter);
     item6Counter = 0;
     Storage.removeAmount("item6");
   });
@@ -870,7 +870,7 @@ function initializeItem7() {
   <img src="../PP3/img/dark-roast-coffee.jpg" alt="product" />
     <div>
       <h3><span class="span-primary">Decaf Pike </span>Place® Roast</h3>
-      <h4>$2.25</h4>
+      <h4>₱200</h4>
       <span class="remove-item-7">Remove</span>
     </div>
     <div>
@@ -891,14 +891,14 @@ function initializeItem7() {
   up7.addEventListener("click", function () {
     item7Counter++;
     item7Amount.innerHTML = item7Counter;
-    updateTotal(2.25);
+    updateTotal(200);
     Storage.setAmount("item7", item7Counter);
   });
 
   down7.addEventListener("click", function () {
     item7Counter--;
     item7Amount.innerHTML = item7Counter;
-    updateTotal(-2.25);
+    updateTotal(-200);
     Storage.setAmount("item7", item7Counter);
 
     if (item7Counter === 0) {
@@ -909,7 +909,7 @@ function initializeItem7() {
 
   remove7.addEventListener("click", function () {
     item7Display.innerHTML = "";
-    updateTotal(-2.25 * item7Counter);
+    updateTotal(-200 * item7Counter);
     item7Counter = 0;
     Storage.removeAmount("item7");
   });
@@ -924,7 +924,7 @@ function initializeItem8() {
   <img src="../PP3/img/cappuccino.jpg" alt="product" />
     <div>
       <h3><span class="span-primary">Cappu</span>ccino</h3>
-      <h4>$2.59</h4>
+      <h4>₱150</h4>
       <span class="remove-item-8">Remove</span>
     </div>
     <div>
@@ -945,14 +945,14 @@ function initializeItem8() {
   up8.addEventListener("click", function () {
     item8Counter++;
     item8Amount.innerHTML = item8Counter;
-    updateTotal(2.59);
+    updateTotal(150);
     Storage.setAmount("item8", item8Counter);
   });
 
   down8.addEventListener("click", function () {
     item8Counter--;
     item8Amount.innerHTML = item8Counter;
-    updateTotal(-2.59);
+    updateTotal(-150);
     Storage.setAmount("item8", item8Counter);
 
     if (item8Counter === 0) {
@@ -963,7 +963,7 @@ function initializeItem8() {
 
   remove8.addEventListener("click", function () {
     item8Display.innerHTML = "";
-    updateTotal(-2.59 * item8Counter);
+    updateTotal(-150 * item8Counter);
     item8Counter = 0;
     Storage.removeAmount("item8");
   });
@@ -978,7 +978,7 @@ function initializeItem9() {
   <img src="../PP3/img/cappuccino.jpg" alt="product" />
     <div>
       <h3><span class="span-primary">Blonde</span> Cappuccino</h3>
-      <h4>$2.34</h4>
+      <h4>₱200</h4>
       <span class="remove-item-9">Remove</span>
     </div>
     <div>
@@ -999,14 +999,14 @@ function initializeItem9() {
   up9.addEventListener("click", function () {
     item9Counter++;
     item9Amount.innerHTML = item9Counter;
-    updateTotal(2.34);
+    updateTotal(200);
     Storage.setAmount("item9", item9Counter);
   });
 
   down9.addEventListener("click", function () {
     item9Counter--;
     item9Amount.innerHTML = item9Counter;
-    updateTotal(-2.34);
+    updateTotal(-200);
     Storage.setAmount("item9", item9Counter);
 
     if (item9Counter === 0) {
@@ -1017,7 +1017,7 @@ function initializeItem9() {
 
   remove9.addEventListener("click", function () {
     item9Display.innerHTML = "";
-    updateTotal(-2.34 * item9Counter);
+    updateTotal(-200 * item9Counter);
     item9Counter = 0;
     Storage.removeAmount("item9");
   });
@@ -1032,7 +1032,7 @@ function initializeItem10() {
   <img src="../PP3/img/espresso.jpg" alt="product" />
     <div>
       <h3><span class="span-primary">Espr</span>esso</h3>
-      <h4>$2.89</h4>
+      <h4>₱180</h4>
       <span class="remove-item-10">Remove</span>
     </div>
     <div>
@@ -1053,14 +1053,14 @@ function initializeItem10() {
   up10.addEventListener("click", function () {
     item10Counter++;
     item10Amount.innerHTML = item10Counter;
-    updateTotal(2.89);
+    updateTotal(180);
     Storage.setAmount("item10", item10Counter);
   });
 
   down10.addEventListener("click", function () {
     item10Counter--;
     item10Amount.innerHTML = item10Counter;
-    updateTotal(-2.89);
+    updateTotal(-180);
     Storage.setAmount("item10", item10Counter);
 
     if (item10Counter === 0) {
@@ -1071,7 +1071,7 @@ function initializeItem10() {
 
   remove10.addEventListener("click", function () {
     item10Display.innerHTML = "";
-    updateTotal(-2.89 * item10Counter);
+    updateTotal(-180 * item10Counter);
     item10Counter = 0;
     Storage.removeAmount("item10");
   });
@@ -1086,7 +1086,7 @@ function initializeItem11() {
   <img src="../PP3/img/espresso-macchiato.jpg" alt="product" />
     <div>
       <h3><span class="span-primary">Espresso</span> Macchiato</h3>
-      <h4>$2.18</h4>
+      <h4>₱180</h4>
       <span class="remove-item-11">Remove</span>
     </div>
     <div>
@@ -1107,14 +1107,14 @@ function initializeItem11() {
   up11.addEventListener("click", function () {
     item11Counter++;
     item11Amount.innerHTML = item11Counter;
-    updateTotal(2.18);
+    updateTotal(180);
     Storage.setAmount("item11", item11Counter);
   });
 
   down11.addEventListener("click", function () {
     item11Counter--;
     item11Amount.innerHTML = item11Counter;
-    updateTotal(-2.18);
+    updateTotal(-180);
     Storage.setAmount("item11", item11Counter);
 
     if (item11Counter === 0) {
@@ -1125,7 +1125,7 @@ function initializeItem11() {
 
   remove11.addEventListener("click", function () {
     item11Display.innerHTML = "";
-    updateTotal(-2.18 * item11Counter);
+    updateTotal(-180 * item11Counter);
     item11Counter = 0;
     Storage.removeAmount("item11");
   });
@@ -1140,7 +1140,7 @@ function initializeItem12() {
   <img src="../PP3/img/flat-white.jpg" alt="product" />
     <div>
       <h3><span class="span-primary">Flat</span> White</h3>
-      <h4>$2.75</h4>
+      <h4>₱190</h4>
       <span class="remove-item-12">Remove</span>
     </div>
     <div>
@@ -1161,14 +1161,14 @@ function initializeItem12() {
   up12.addEventListener("click", function () {
     item12Counter++;
     item12Amount.innerHTML = item12Counter;
-    updateTotal(2.75);
+    updateTotal(190);
     Storage.setAmount("item12", item12Counter);
   });
 
   down12.addEventListener("click", function () {
     item12Counter--;
     item12Amount.innerHTML = item12Counter;
-    updateTotal(-2.75);
+    updateTotal(-190);
     Storage.setAmount("item12", item12Counter);
 
     if (item12Counter === 0) {
@@ -1179,7 +1179,7 @@ function initializeItem12() {
 
   remove12.addEventListener("click", function () {
     item12Display.innerHTML = "";
-    updateTotal(-2.75 * item12Counter);
+    updateTotal(-190 * item12Counter);
     item12Counter = 0;
     Storage.removeAmount("item12");
   });
