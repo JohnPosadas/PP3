@@ -1125,52 +1125,118 @@ function initializeItem11() {
  * Initializes item12 if it is already in the cart or needs to be added to the cart.
  * Flat White
  */
+// function initializeItem12() {
+//   item12Display.innerHTML += `<div class="twelve12-cart-item">
+//   <img src="../PP3/img/flat-white.jpg" alt="product" />
+//     <div>
+//       <h3><span class="span-primary">Flat</span> White</h3>
+//       <h4>$2.75</h4>
+//       <span class="remove-item-12">Remove</span>
+//     </div>
+//     <div>
+//       <div class="item12Up">
+//       <i class="fas fa-chevron-up"></i>
+//       </div>
+//       <p class="item-amount12">${item12Counter}</p>
+//       <div class="item12Down">
+//       <i class="fas fa-chevron-down"></i>
+//       </div>
+//     </div>
+//           </div >`;
+//   item12Amount = document.querySelector(".item-amount12");
+//   up12 = document.querySelector(".item12Up");
+//   down12 = document.querySelector(".item12Down");
+//   remove12 = document.querySelector(".remove-item-12");
+
+//   up12.addEventListener("click", function () {
+//     item12Counter++;
+//     item12Amount.innerHTML = item12Counter;
+//     updateTotal(2.75);
+//     Storage.setAmount("item12", item12Counter);
+//   });
+
+//   down12.addEventListener("click", function () {
+//     item12Counter--;
+//     item12Amount.innerHTML = item12Counter;
+//     updateTotal(-2.75);
+//     Storage.setAmount("item12", item12Counter);
+
+//     if (item12Counter === 0) {
+//       item12Display.innerHTML = "";
+//       Storage.removeAmount("item12");
+//     }
+//   });
+
+//   remove12.addEventListener("click", function () {
+//     item12Display.innerHTML = "";
+//     updateTotal(-2.75 * item12Counter);
+//     item12Counter = 0;
+//     Storage.removeAmount("item12");
+//   });
+// }
+
 function initializeItem12() {
+  // Define the conversion rate
+  const usdToPhpRate = 50;
+
+  // Product details with prices in USD
+  const productName = "Flat White";
+  const usdPrice = 2.75;
+  const phpPrice = usdPrice * usdToPhpRate;
+
+  // Generate HTML with converted prices
   item12Display.innerHTML += `<div class="twelve12-cart-item">
-  <img src="../PP3/img/flat-white.jpg" alt="product" />
+    <img src="../PP3/img/flat-white.jpg" alt="product" />
     <div>
-      <h3><span class="span-primary">Flat</span> White</h3>
-      <h4>$2.75</h4>
+      <h3><span class="span-primary">${productName}</span></h3>
+      <h4>${phpPrice} PHP</h4> <!-- Display price in PHP -->
       <span class="remove-item-12">Remove</span>
     </div>
     <div>
       <div class="item12Up">
-      <i class="fas fa-chevron-up"></i>
+        <i class="fas fa-chevron-up"></i>
       </div>
       <p class="item-amount12">${item12Counter}</p>
       <div class="item12Down">
-      <i class="fas fa-chevron-down"></i>
+        <i class="fas fa-chevron-down"></i>
       </div>
     </div>
-          </div >`;
+  </div>`;
+
+  // Select elements for interaction
   item12Amount = document.querySelector(".item-amount12");
   up12 = document.querySelector(".item12Up");
   down12 = document.querySelector(".item12Down");
   remove12 = document.querySelector(".remove-item-12");
 
+  // Event listeners for quantity adjustments
   up12.addEventListener("click", function () {
     item12Counter++;
     item12Amount.innerHTML = item12Counter;
-    updateTotal(2.75);
+    updateTotal(usdPrice * usdToPhpRate); // Update total in PHP
     Storage.setAmount("item12", item12Counter);
   });
 
   down12.addEventListener("click", function () {
-    item12Counter--;
-    item12Amount.innerHTML = item12Counter;
-    updateTotal(-2.75);
-    Storage.setAmount("item12", item12Counter);
+    if (item12Counter > 0) {
+      item12Counter--;
+      item12Amount.innerHTML = item12Counter;
+      updateTotal(-usdPrice * usdToPhpRate); // Update total in PHP
+      Storage.setAmount("item12", item12Counter);
 
-    if (item12Counter === 0) {
-      item12Display.innerHTML = "";
-      Storage.removeAmount("item12");
+      if (item12Counter === 0) {
+        item12Display.innerHTML = "";
+        Storage.removeAmount("item12");
+      }
     }
   });
 
+  // Event listener for item removal
   remove12.addEventListener("click", function () {
     item12Display.innerHTML = "";
-    updateTotal(-2.75 * item12Counter);
+    updateTotal(-usdPrice * item12Counter * usdToPhpRate); // Update total in PHP
     item12Counter = 0;
     Storage.removeAmount("item12");
   });
 }
+
