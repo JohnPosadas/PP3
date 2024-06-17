@@ -174,29 +174,14 @@ if (!localStorage.getItem("total")) {
  * Updates total in the local storage and class "total" in the DOM
  * @param {Float} moneyChange
  */
-// function updateTotal(moneyChange) {
-//   totalAmount += moneyChange;
-//   localStorage.setItem("total", totalAmount.toString());
-//   if (totalAmount > 1) {
-//     total.innerHTML = `<span class="span-primary">Total Amount:</span> $${totalAmount.toFixed(
-//       2
-//     )}`;
-//   } else {
-//     total.innerHTML = `<br>
-//       <br>
-//       Your Shopping Cart is empty. <br>
-//         Add items to cart by hovering over / tapping on the images of products
-//     on the Menu page.`;
-//   }
-// }
+
 function updateTotal(moneyChange) {
   totalAmount += moneyChange;
   localStorage.setItem("total", totalAmount.toString());
   if (totalAmount > 1) {
-    total.innerHTML = `<span class="span-primary">Total Amount:</span> $${totalAmount.toFixed(
-      2
-    )}`;
-  } else {
+    total.innerHTML = `<span class="span-primary">Total Amount:</span> ${formatter.format(totalAmount)}`;
+      
+    } else {
     total.innerHTML = `<br>
       <br>
       Your Shopping Cart is empty. <br>
@@ -204,6 +189,9 @@ function updateTotal(moneyChange) {
     on the Menu page.`;
   }
 }
+
+// Display the formatted amount initially
+updateTotal(0);
 
 /* Item displays in the DOM */
 
