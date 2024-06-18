@@ -180,8 +180,7 @@ function updateTotal(moneyChange) {
   localStorage.setItem("total", totalAmount.toString());
   if (totalAmount > 1) {
     total.innerHTML = `<span class="span-primary">Total Amount:</span> ${formatter.format(totalAmount)}`;
-      
-    } else {
+      } else {
     total.innerHTML = `<br>
       <br>
       Your Shopping Cart is empty. <br>
