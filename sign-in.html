@@ -108,28 +108,16 @@
         <div class="pic-area">
           <div class="pic-area-text">
             <div id="login-box">
-              <form
-                id="login-form"
-                name="login-form"
-                action="index.html"
-                method="post"
-              >
-                <label>Username: </label> <br />
-                <input
-                  type="text"
-                  name="userid"
-                  id="userid"
-                  pattern="[a-zA-Z0-9]+"
-                  required
-                />
-                <!-- minlength="10" does not work probably bc you need to use the submit button--><br />
-                <label>Password: </label> <br />
-                <input type="password" name="pswrd" id="pswrd" /><br />
-                <br />
-              </form>
-              <div id="username-display"></div>
-              <button class="btn-order" id="login-btn">Login</button>
-            </div>
+              <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <br>
+                <button class="btn-order" type="submit">Login</button>
+                </form>
+      
             <div class="icons">
               <a href="#!">
                 <i class="fab fa-twitter"></i>
@@ -149,6 +137,33 @@
         </div>
       </section>
     </main>
+
+    <script>
+      document.getElementById('login-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      
+      fetch('https://reqres.in/api/login', {
+      method: 'POST',
+      headers: {
+      'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ email: username, password: password })
+      })
+      .then(response => response.json())
+      .then(data => {
+      alert('Login successful');
+      console.log(data);
+      })
+      .catch(error => {
+      alert('Login failed. Please try again');
+      console.error(error);
+      });
+      });
+      </script>
+
+
     <script src="../PP3/js/script.js"></script>
     <script
       src="https://kit.fontawesome.com/c057664144.js"

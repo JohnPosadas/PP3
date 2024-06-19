@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+<h2>Registration Form</h2>
+
+<form id="registrationForm">
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email"><br>
+  <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username"><br>
+  <label for="password">Password:</label><br>
+  <input type="password" id="password" name="password"><br>
+  <input type="submit" value="Register">
+</form>
+
+<script>
+$(document).ready(function(){
+  $('#registrationForm').submit(function(event){
+
+    event.preventDefault();
+
+    var userData = {
+      "email": $('#email').val(),
+      "username": $('#username').val(),
+      "password": $('#password').val()
+    };
+
+    $.ajax({
+      type: 'POST',
+      url: 'https://reqres.in/api/register',
+      data: userData,
+      success: function(response){
+        alert('Registration Successful');
+        console.log(response);
+      },
+      error: function(xhr, status, error){
+        alert('Registration Failed');
+        console.log(xhr.responseText);
+      }
+    });
+
+  });
+});
+</script>
+
+</body>
+</html>
