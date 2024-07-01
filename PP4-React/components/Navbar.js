@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../images/cuppaclickLogo.jpg'; // path to image file
+import logo from '../PortfolioProject/images/cuppaclickLogo.jpg'; // path to image file
 
 const Navbar = () => (
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
