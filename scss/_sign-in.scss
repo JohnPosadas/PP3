@@ -49,8 +49,9 @@
       background-color: $black-color;
       color: $primary-color;
       outline: none;
-      border: 1px solid $primary-color;
+      border-radius: 30px solid $primary-color;
     }
+
 
     #username-display {
       font-size: 2rem;
