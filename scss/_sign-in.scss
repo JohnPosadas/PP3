@@ -7,7 +7,7 @@
     align-items: center;
     text-align: center;
     background: linear-gradient(to right, rgba(grey, 0.9), rgba(grey, 0.3)),
-      url("../PP3/img/sign-in-bg.jpg") center top no-repeat;
+      url("../PortfolioProject/img/sign-in-bg.jpg") center top no-repeat;
     background-size: cover;
     font-family: "Marck Script", cursive;
     @include transition-ease;
@@ -49,8 +49,9 @@
       background-color: $black-color;
       color: $primary-color;
       outline: none;
-      border: 1px solid $primary-color;
+      border-radius: 30px solid $primary-color;
     }
+
 
     #username-display {
       font-size: 2rem;
