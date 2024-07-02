@@ -20,6 +20,12 @@ const Navbar = () => (
         <li class="nav-item">
           <Link to="/cart">Cart</Link>
         </li>
+        <li class="nav-item">
+          <Link to="/login">Login</Link>
+        </li>
+        <li class="nav-item">
+          <Link to="/register">Register</Link>
+        </li>
       </ul>
     </div>
   </div>
