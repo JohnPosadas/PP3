@@ -1,0 +1,15 @@
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 1rem;
+  }
+  
+  .btn-primary {
+    background-color: #6f4e37; /* Coffee brown */
+    border-color: #6f4e37;
+  }
+  
+  .btn-primary:hover {
+    background-color: #5a3d2b;
+    border-color: #5a3d2b;
+  }
+  

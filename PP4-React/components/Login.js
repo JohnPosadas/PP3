@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './Login.css'; // Custom CSS for additional styling
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -21,13 +23,37 @@ const Login = () => {
   };
 
   return (
-    <div>
-      <h1>Login</h1>
-      <form onSubmit={handleSubmit}>
-        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" required />
-        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" required />
-        <button type="submit">Login</button>
-      </form>
+    <div className="container d-flex align-items-center justify-content-center min-vh-100">
+      <div className="card p-4 shadow-lg">
+        <h1 className="text-center mb-4">Login</h1>
+        <form onSubmit={handleSubmit}>
+          <div className="form-group mb-3">
+            <label htmlFor="email" className="form-label">Email</label>
+            <input 
+              type="email" 
+              className="form-control" 
+              id="email" 
+              value={email} 
+              onChange={(e) => setEmail(e.target.value)} 
+              placeholder="Enter your email" 
+              required 
+            />
+          </div>
+          <div className="form-group mb-3">
+            <label htmlFor="password" className="form-label">Password</label>
+            <input 
+              type="password" 
+              className="form-control" 
+              id="password" 
+              value={password} 
+              onChange={(e) => setPassword(e.target.value)} 
+              placeholder="Enter your password" 
+              required 
+            />
+          </div>
+          <button type="submit" className="btn btn-primary w-100">Login</button>
+        </form>
+      </div>
     </div>
   );
 }
