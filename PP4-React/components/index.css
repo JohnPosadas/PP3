@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  .navbar {
+    background-color: #6f4e37; /* Coffee brown */
+  }
+  .navbar-brand {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 1.8rem;
+    color: #f3e5ab; /* Light coffee color */
+  }
+  .navbar-nav .nav-link {
+    color: #f3e5ab;
+  }
+  .navbar-nav .nav-link:hover {
+    color: #ffffff;
+  }
+  .navbar-toggler {
+    border-color: #f3e5ab;
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23f3e5ab' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  .hero {
+    background: url('https://reviewed-com-res.cloudinary.com/image/fetch/s--ZCPwL61B--/b_white,c_limit,cs_srgb,f_auto,fl_progressive.strip_profile,g_center,q_auto,w_972/https://reviewed-production.s3.amazonaws.com/1696178715050/CoffeeHero.png') no-repeat center center;
+    background-size: cover;
+    height: 60vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .categories, .featured-products {
+    padding: 2rem 0;
+  }
+  .footer {
+    background-color: #6f4e37;
+    color: #f3e5ab;
+    padding: 1rem 0;
+  }
+  
+  
+  
+  
+  
